@@ -1,0 +1,279 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Research Day</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<link href="css/custom.css" rel="stylesheet"> 
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Research Day</a> <!--  -->
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="container">
+		<h1>Research Day</h1>
+
+<h3>Program</h3>
+
+<table>
+  <tr>
+    <td>09:30</td>
+    <td>Opening</td>
+    <td>Sjaak Brinkkemper & Gerrit van Meer</td>
+  </tr>
+
+  <tr>
+    <td>10:00</td>
+    <td></td>
+    <td>Maarten L&ouml;ffler</td>
+  </tr>
+
+  <tr>
+    <td>10:20</td>
+    <td>Algorithmic Flowers</td>
+    <td>Han Hoogeveen</td>
+  </tr>
+
+  <tr>
+    <td>10:40</td>
+    <td>Domain-specific Type Error Diagnosis</td>
+    <td>Jurriaan Hage</td>
+  </tr>
+  
+  <tr>
+    <td>11:00</td>
+    <td>Coffee Break</td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>11:30</td>
+    <td>???</td>
+    <td>Deb Panja</td>
+  </tr>
+
+  <tr>
+    <td>11:50</td>
+    <td>Exceptional Model Mining</td>
+    <td>Ad Feelders</td>
+  </tr>
+
+  <tr>
+    <td>12:10</td>
+    <td>???</td>
+    <td>Mehdi Destani and Frank Dignum</td>
+  </tr>
+
+  <tr>
+    <td>12:30</td>
+    <td>Lunch and posters</td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>14:30</td>
+    <td>???</td>
+    <td>Slinger Janssen</td>
+  </tr>
+
+  <tr>
+    <td>14:50</td>
+    <td>Music Information Retrieval: integrating musical information from multiple sources</td>
+    <td>Vincent Koops</td>
+  </tr>
+
+  <tr>
+    <td>15:10</td>
+    <td>SleepCare: persuasive strategies in e-coaching for insomnia</td>
+    <td>Robbert-Jan Beun</td>
+  </tr>  
+  
+  <tr>
+    <td>15:30</td>
+    <td>Coffee break</td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>16:00</td>
+    <td>???</td>
+    <td>Floris Bax en Henry Prakken</td>
+  </tr>
+
+  <tr>
+    <td>16:20</td>
+    <td>Directional Field Synthesis, Design, and Processing</td>
+    <td>Amir Vaxman</td>
+  </tr>
+
+  <tr>
+    <td>17:00</td>
+    <td>Drinks</td>
+    <td></td>
+  </tr>
+  
+  
+  
+  
+</table>
+<h3>Abstracts</h3>
+                
+<h4>Algorithmic Flowers - Han Hoogeveen</h4>
+
+<p>In this talk I will discuss a problem that plays an important role
+in the flower industry: we must determine how many mother plants are
+required to be able to produce a given demand of cuttings. This sounds
+like an easy problem, but working with living material (plants)
+introduces complications that are rarely encountered in optimization
+problems: the constraints for cutting such that the mother plant
+remains in shape are not explicitly known.</p>
+
+<p>We have tackled this problem by a combination of data mining and linear
+programming. We apply data mining to infer constraints that a cutting
+pattern, stating how many cuttings to harvest in each period, should obey,
+and we use these constraints in a linear programming formulation that
+determines the minimum number of mother plants necessary. We then consider
+the problem of maximizing the total profit given the number of mother plants
+and show how to solve it through linear programming.</p>
+
+<h4>Domain-specific Type Error Diagnosis - Jurriaan Hage</h4>
+
+<p>Domain-specific languages (DSLs) are (often restricted) programming
+languages suited for a particular domain.  In software technology and
+industry they have become increasingly popular because programs in the
+given domain can be extremely concise and clear, and can often be
+written by domain-experts who are not trained programmers.</p>
+
+<p>To avoid the effort of developing a tool chain (a compiler, an IDE,
+and libraries) for every DSL, and to ease the integration of multiple
+DSLs, an alternative way of implementing DSLs is to embed them in a
+suitably powerful general purpose language, like C++ or Haskell. In
+that case, a DSL is often simply a library that exhibits the
+``fluency’’ of the domain and that is encoded in some way in the
+general purpose language.</p>
+
+<p>The complication that I address in this talk is how to manipulate
+the type error messages that are given by the compiler, so that they
+are phrased in terms of the domain the programmer understands without
+revealing the underlying encoding that a programmer should not have to
+know about.</p>
+
+<h4>Exceptional Model Mining - Ad Feelders</h4>
+
+<p>Exceptional Model Mining (EMM) is an exploratory data mining
+technique that has been developed in recent years in collaboration
+between Leiden and Utrecht. We explain the general idea of EMM and
+illustrate its application through examples.</p>
+
+<h4>Music Information Retrieval: integrating musical information from multiple sources - Vincent Koops</h4>
+
+<p>In this talk, we present our current research on the fundamental issue
+of integrating heterogeneous information from multiple, autonomous
+data sources using data fusion, and its application in Music
+Information Retrieval. The recent explosion of crowd-sourced
+information, such as on the internet, calls for sophisticated
+algorithms for data-driven quality assessment and data integration to
+create better, and more reliable data.  In Music Information
+Retrieval, a typical application scenario are chord label sequences.
+We present our approach to integrate heterogeneous chord label
+sequences using data fusion, in order to create significantly better
+chord label sequences, demonstrating our ongoing collaboration with
+Chordify, an online music e-learning platform. The Chordify website
+teaches users the chords needed to play along with music from websites
+such as YouTube. Chords are a compact way to describe the harmony of a
+musical piece, and sequences of chords are often used by guitarists
+and pianists to play a piece. Chordify allows users to create their
+own, personalized chord sequences for a song if they disagree with the
+output of the Chordify automatic chord extraction algorithm. Due to
+the many users of Chordify, this results in large amounts of
+crowd-sourced musical information. We demonstrate how we can integrate
+these heterogeneous chord label sequences using data fusion, to create
+significantly better chord label sequences. Since data fusion is a
+very generic approach, we also show how we apply it to improving the
+state assurance in machine state prediction from audio sources for the
+specific case of quadcopters, in an ongoing collaboration with
+Carnegie Mellon University. Furthermore, we show our current research
+aiming to model the musical preference of a large group of Chordify
+users. Using deep learning, we try to move from a normative to a more
+descriptive automatic chord extraction method.</p>
+
+<h4>SleepCare: persuasive strategies in e-coaching for insomnia</h4>
+
+<p>Improving assignment adherence is a major challenge in all types of
+behavior therapies (BT), in particular in self-help therapies from
+books and internet sites. In the Sleepcare-project, methods from
+persuasive technology were investigated to improve adherence of
+self-help BT for insomnia (BT-i). The project aimed at a generic
+coaching system that integrates persuasive strategies with protocols
+for behavior change in BT-i, and the technology that supports the
+system. The interface is based on the so-called Talk-and-Tools
+metaphor where a clear distinction is made between conversational
+interaction (‘Talk’)and direct manipulation (‘Tools’). BT-i protocols
+and persuasive strategies, such as notification and commitment, were
+implemented in a fully automated smartphone application and integrated
+in a research infrastructure for empirical testing. In this
+presentation, I will give a brief overview of the development of the
+system, the rationale behind its design, some preliminary results from
+a Randomized Control Trial and our future plans.</p>
+
+
+<h4>Directional Field Synthesis, Design, and Processing</h4>
+
+<p>Directional fields on discrete surfaces and in volumes are
+key components of geometry processing. Many applications make use of
+such fields, among which are remeshing, surface parametrization
+(texture mapping), texture synthesis, fluid simulation, and many
+more. I will present the challenges and the limitations in the design
+and the analysis of such fields, and focus on novel ways to compute
+them.</p>
+
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
+
+
